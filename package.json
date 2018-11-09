@@ -1,0 +1,49 @@
+{
+  "name": "bitbar-online",
+  "version": "1.0.0",
+  "description": "Internet status for your BitBar",
+  "author": "Colby Rogness <colbyrogness@gmail.com>",
+  "license": "MIT",
+  "repository": "colbin8r/bitbar-online",
+  "scripts": {
+    "start": "./online.10s.js",
+    "test": "xo",
+    "commit": "git-cz",
+    "preversion": "npm run test"
+  },
+  "files": [
+    "online.10s.js"
+  ],
+  "keywords": [
+    "bitbar",
+    "macos",
+    "osx",
+    "menubar",
+    "internet",
+    "wifi"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "dependencies": {
+    "bitbar": "^0.3.0",
+    "default-gateway": "^3.0.1",
+    "internal-ip": "^3.0.1",
+    "is-online": "^7.0.0",
+    "public-ip": "^2.4.0"
+  },
+  "xo": {
+    "semicolon": false,
+    "esnext": true
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "commitizen": "^3.0.4",
+    "cz-conventional-changelog": "^2.1.0",
+    "xo": "^0.23.0"
+  }
+}
